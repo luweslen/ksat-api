@@ -1,0 +1,21 @@
+{
+  "name": "ksat-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "node --watch src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luweslen/ksat-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luweslen/ksat-api/issues"
+  },
+  "homepage": "https://github.com/luweslen/ksat-api#readme"
+}
