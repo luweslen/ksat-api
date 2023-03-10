@@ -1,15 +1,15 @@
 export async function JSONHandler(request, response) {
-  const buffers = []
+  const buffers = [];
 
   for await (const chunk of request) {
-    buffers.push(chunk)
+    buffers.push(chunk);
   }
 
   try {
-    request.body = JSON.parse(Buffer.concat(buffers).toString())
+    request.body = JSON.parse(Buffer.concat(buffers).toString());
   } catch {
-    request.body = {}
+    request.body = {};
   }
 
-  response.setHeader('Content-type', 'application/json')
+  response.setHeader('Content-type', 'application/json');
 }

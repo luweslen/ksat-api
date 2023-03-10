@@ -1,4 +1,4 @@
-import { statusRoutes } from './routes/status.js'
+import { statusRoutes } from './routes/status.js';
 
 export const routes = [
   ...statusRoutes

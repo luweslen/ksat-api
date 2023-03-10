@@ -1,4 +1,4 @@
-import { buildRouteParams } from '../utils/buildRouteParams.js'
+import { buildRouteParams } from '../utils/buildRouteParams.js';
 import info from '../../package.json' assert { type: 'json' };
 
 export const statusRoutes = [
@@ -10,7 +10,7 @@ export const statusRoutes = [
         service: info.name,
         version: info.version,
         status: 'ON'
-      }
+      };
 
       return response.end(JSON.stringify(statusData));
     }
