@@ -1,11 +1,15 @@
 import info from '../../package.json' assert { type: 'json' };
 
-export function GetStatus(_, response) {
-  const statusData = {
-    service: info.name,
-    version: info.version,
-    status: 'ON'
-  };
+export class StatusController {
+  constructor() { }
 
-  return response.end(JSON.stringify(statusData));
+  get(_, response) {
+    const statusData = {
+      service: info.name,
+      version: info.version,
+      status: 'ON'
+    };
+
+    return response.end(JSON.stringify(statusData));
+  }
 }
